@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    <h1>RESOLUTION OF A SECOND DEGREE EQUATION</h1>
+    <form method="POST">
+        <label for="a">a:</label>
+        <input type="number" step="any" name="a" required><br><br>
+        
+        <label for="b">b:</label>
+        <input type="number" step="any" name="b" required><br><br>
+        
+        <label for="c">c:</label>
+        <input type="number" step="any" name="c" required><br><br>
+        
+        <input type="submit" value="Solve">
+    </form>
+    
+    {% if result %}
+    <h2>Result:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
